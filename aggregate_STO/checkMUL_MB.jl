@@ -8,7 +8,7 @@ import Base
 include("sc_create_mul_bus.jl")
 include("compute_met_load.jl")
 basedir = homedir()
-push!(LOAD_PATH,"$basedir/.julia/packages/UnitCommitmentSTO/6AWag/src/")
+push!(LOAD_PATH,"content/flexiramp_imp/UnitCommitmentSTO/6AWag/src/")
 import UnitCommitmentSTO
 import MathOptInterface
 using LinearAlgebra

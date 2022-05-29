@@ -6,7 +6,7 @@ using JuMP
 using Printf
 import Base
 basedir = homedir()
-push!(LOAD_PATH,"$basedir/.julia/packages/UnitCommitmentSTO/6AWag/src/")
+push!(LOAD_PATH,"content/flexiramp_imp/UnitCommitmentSTO/6AWag/src/")
 import UnitCommitmentSTO
 import MathOptInterface
 using LinearAlgebra

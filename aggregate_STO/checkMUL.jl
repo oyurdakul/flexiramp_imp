@@ -7,7 +7,7 @@ using Printf
 import Base
 include("sc_create.jl")
 basedir = homedir()
-push!(LOAD_PATH,"$basedir/.julia/packages/UnitCommitmentMUL/6AWag/src/")
+push!(LOAD_PATH,"content/flexiramp_imp/UnitCommitmentSTO/6AWag/src/")
 using UnitCommitmentMUL
 import MathOptInterface
 using LinearAlgebra
