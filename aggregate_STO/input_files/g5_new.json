@@ -1,0 +1,241 @@
+{
+  "SOURCE": "University of Washington, Dept. of Electrical Engineering. \"Power Systems Test Case Archive\". Available at: http://www.ee.washington.edu/research/pstca/ (Accessed: Nov 14, 2020)\n\nD. Zimmerman, C. E. Murillo-Sandnchez and R. J. Thomas. \"Matpower: Steady-state operations, planning, and analysis tools forpower systems research and education\", IEEE Transactions on PowerSystems, vol. 26, no. 1, pp. 12 \u201319, Feb. 2011. DOI: 10.1109/TPWRS.2010.2051168\n",
+  "Parameters": {
+    "Power balance penalty ($/MW)": 10000.0,
+    "FRP penalty ($/MW)": 3000.0,
+    "Time horizon (h)": 24
+  },
+  "Generators": {
+    "g1": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        16.901100444445653,
+        1016.91053141097933
+      ],
+      "Production cost curve ($)": [
+        716.7470233305867,
+        26716.933634581022
+      ],
+      "Startup costs ($)": [
+        2055.35,
+        2422.12,
+        2872.63
+      ],
+      "Startup delays (h)": [
+        1,
+        2,
+        4
+      ],
+      "Ramp up limit (MW)": 988.84,
+      "Ramp down limit (MW)": 988.84,
+      "Startup limit (MW)": 988.84,
+      "Shutdown limit (MW)": 998.84,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1,
+      "Initial status (h)": 24,
+      "Initial power (MW)": 857.74170000000004
+    },
+    "g2": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        2.357203830814138,
+        558.62266018925479
+      ],
+      "Production cost curve ($)": [
+        553.4271497797719,
+        55473.928912640124
+      ],
+      "Startup costs ($)": [
+        1104.29,
+        1105.58,
+        1109.13
+      ],
+      "Startup delays (h)": [
+        1,
+        2,
+        4
+      ],
+      "Ramp up limit (MW)": 482.34,
+      "Ramp down limit (MW)": 482.34,
+      "Startup limit (MW)": 482.34,
+      "Shutdown limit (MW)": 482.34,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1,
+      "Initial status (h)": -24,
+      "Initial power (MW)": 0.0
+    },
+    "g3": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        1.619043590917833,
+        601.71937486941513
+      ],
+      "Production cost curve ($)": [
+        185.7745024725275,
+        16985.322597393779
+      ],
+      "Startup costs ($)": [
+        200.12,
+        201.39,
+        202.43
+      ],
+      "Startup delays (h)": [
+        1,
+        2,
+        4
+      ],
+      "Ramp up limit (MW)": 587.9,
+      "Ramp down limit (MW)": 587.9,
+      "Startup limit (MW)": 587.9,
+      "Shutdown limit (MW)": 587.9,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1,
+      "Initial status (h)": -24,
+      "Initial power (MW)": 0.0
+    },
+    "g4": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        2.357203830814138,
+        554.40279483177456
+      ],
+      "Production cost curve ($)": [
+        604.551414962958,
+        20084.878506266689
+      ],
+      "Startup costs ($)": [
+        1427.52,
+        1429.57,
+        1432.67
+      ],
+
+      "Startup delays (h)": [
+        1,
+        2,
+        4
+      ],
+      "Ramp up limit (MW)": 500.48,
+      "Ramp down limit (MW)": 500.48,
+      "Startup limit (MW)": 500.48,
+      "Shutdown limit (MW)": 500.48,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1,
+      "Initial status (h)": -24,
+      "Initial power (MW)": 0.0
+    },
+    "g5": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        2.326914798402042,
+        602.50571919947436
+      ],
+      "Production cost curve ($)": [
+        245.5555905711794,
+        18245.427576009033
+      ],
+      "Startup costs ($)": [
+        69.01,
+        106.53,
+        152.79
+      ],
+      "Startup delays (h)": [
+        1,
+        2,
+        4
+      ],
+      "Ramp up limit (MW)": 570.85,
+      "Ramp down limit (MW)": 570.85,
+      "Startup limit (MW)": 570.85,
+      "Shutdown limit (MW)": 570.85,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1,
+      "Initial status (h)": -24,
+      "Initial power (MW)": 0.0
+    }
+  },
+ 
+  "Buses": {
+    "b1": {
+      "Load (MW)": [
+        171.54834,
+        188.95204,
+        206.54726,
+        245.338546,
+        265.654726,
+        288.36666,
+        312.767894,
+        320.813206,
+        337.396924,
+        345.615678,
+        356.613148,
+        366.430806,
+        379.05098,
+        396.096058,
+        416.01428,
+        436.00202,
+        443.007122,
+        443.166276,
+        443.145392,
+        424.156872,
+        412.06072,
+        400.159014,
+        391.49463,
+        382.155688
+      ]
+    }
+  },
+  "Reserves": {
+    "Up-FRP (MW)": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Down-FRP (MW)": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  } 
+}

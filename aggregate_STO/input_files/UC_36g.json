@@ -1,0 +1,1111 @@
+{
+  "LICENSE": "MIT License\n\nCopyright (c) 2018 Diego Alejandro Tejada Arango\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+  "SOURCE": "D. A. Tejada-Arango, S. Lumbreras, P. Sanchez-Martin and A. Ramos. \"Which Unit-Commitment Formulation is Best? A Systematic Comparison,\" in IEEE Transactions on Power Systems. DOI: 10.1109/TPWRS.2019.2962024\n",
+  "Parameters": {
+    "Time (h)": 168
+  },
+  "Generators": {
+    "g0": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        70.8826,
+        114.0267,
+        157.17079999999999,
+        200.3149,
+        243.459
+      ],
+      "Production cost curve ($)": [
+        1013.7252949329093,
+        1339.16776244238,
+        1667.453471855717,
+        1998.5824231729202,
+        2332.55461639399
+      ],
+      "Initial status (h)": 4,
+      "Initial power (MW)": 121.904,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g1": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        90.0131,
+        130.335575,
+        170.65805,
+        210.980525,
+        251.303
+      ],
+      "Production cost curve ($)": [
+        1451.7898993593376,
+        2080.048589799111,
+        2814.2185358756674,
+        3654.299737589007,
+        4600.29219493913
+      ],
+      "Initial status (h)": 4,
+      "Initial power (MW)": 183.586,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g2": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        65.9929,
+        98.693175,
+        131.39345,
+        164.093725,
+        196.794
+      ],
+      "Production cost curve ($)": [
+        901.2153306497028,
+        1396.2921541667545,
+        1998.2354038506676,
+        2707.045079701442,
+        3522.7211817190773
+      ],
+      "Initial status (h)": 2,
+      "Initial power (MW)": 151.234,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g3": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        97.4694,
+        150.92854999999997,
+        204.3877,
+        257.84684999999996,
+        311.306
+      ],
+      "Production cost curve ($)": [
+        1375.8980388809423,
+        1952.9399068555804,
+        2590.719170592941,
+        3289.2358300930223,
+        4048.489885355826
+      ],
+      "Initial status (h)": -4,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g4": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        53.7172,
+        77.94815,
+        102.17909999999999,
+        126.41005,
+        150.641
+      ],
+      "Production cost curve ($)": [
+        848.1791954366065,
+        1207.0812810804237,
+        1636.7916180685568,
+        2137.3102064010063,
+        2708.637046077771
+      ],
+      "Initial status (h)": -1,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g5": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        61.3559,
+        89.49742499999999,
+        117.63895,
+        145.780475,
+        173.922
+      ],
+      "Production cost curve ($)": [
+        925.511707586495,
+        1336.9951726209988,
+        1824.7882817781183,
+        2388.8910350578526,
+        3029.303432460202
+      ],
+      "Initial status (h)": 3,
+      "Initial power (MW)": 123.986,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g6": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        50.5737,
+        78.68277499999999,
+        106.79185,
+        134.900925,
+        163.01
+      ],
+      "Production cost curve ($)": [
+        673.366806918385,
+        1050.6587045221634,
+        1507.3104227283604,
+        2043.321961536976,
+        2658.6933209480094
+      ],
+      "Initial status (h)": -3,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g7": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        72.3319,
+        114.295425,
+        156.25895,
+        198.222475,
+        240.186
+      ],
+      "Production cost curve ($)": [
+        1197.3946901211548,
+        1760.9668590746955,
+        2423.9960697237034,
+        3186.4823220681787,
+        4048.4256161081207
+      ],
+      "Initial status (h)": -6,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g8": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        84.5106,
+        138.6732,
+        192.8358,
+        246.99839999999998,
+        301.161
+      ],
+      "Production cost curve ($)": [
+        1432.0885599616959,
+        2223.9088677986383,
+        3190.8168096762847,
+        4332.812385594634,
+        5649.895595553689
+      ],
+      "Initial status (h)": -2,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g9": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        98.0993,
+        146.710475,
+        195.32164999999998,
+        243.93282499999998,
+        292.544
+      ],
+      "Production cost curve ($)": [
+        1638.4100985578916,
+        2421.507480651717,
+        3352.9233563913917,
+        4432.657725776918,
+        5660.710588808293
+      ],
+      "Initial status (h)": 3,
+      "Initial power (MW)": 148.906,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g10": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        33.1117,
+        50.420775,
+        67.72985,
+        85.03892499999999,
+        102.348
+      ],
+      "Production cost curve ($)": [
+        356.1628824481519,
+        542.6393752292013,
+        770.7899562790014,
+        1040.6146255975523,
+        1352.1133831848542
+      ],
+      "Initial status (h)": 3,
+      "Initial power (MW)": 73.1436,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1
+    },
+    "g11": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        96.7663,
+        135.616475,
+        174.46665000000002,
+        213.316825,
+        252.167
+      ],
+      "Production cost curve ($)": [
+        1379.350998424602,
+        1870.598776405012,
+        2431.9863084393287,
+        3063.5135945275515,
+        3765.1806346696817
+      ],
+      "Initial status (h)": -6,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g12": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        69.0948,
+        99.3961,
+        129.69740000000002,
+        159.9987,
+        190.3
+      ],
+      "Production cost curve ($)": [
+        1064.5503954645656,
+        1599.792100617085,
+        2247.0638023999977,
+        3006.365500813303,
+        3877.697195857
+      ],
+      "Initial status (h)": -4,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g13": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        33.5273,
+        56.40497499999999,
+        79.28264999999999,
+        102.160325,
+        125.038
+      ],
+      "Production cost curve ($)": [
+        363.00229819514743,
+        646.4895188119763,
+        1022.1902752810857,
+        1490.1045676024764,
+        2050.2323957761473
+      ],
+      "Initial status (h)": -1,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1
+    },
+    "g14": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        57.5014,
+        84.14455000000001,
+        110.7877,
+        137.43085000000002,
+        164.074
+      ],
+      "Production cost curve ($)": [
+        921.5450663977094,
+        1308.6543829592954,
+        1770.2332820665986,
+        2306.2817637196194,
+        2916.799827918357
+      ],
+      "Initial status (h)": 3,
+      "Initial power (MW)": 143.34,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g15": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        62.0365,
+        90.696875,
+        119.35725,
+        148.017625,
+        176.678
+      ],
+      "Production cost curve ($)": [
+        838.4238570920904,
+        1210.278201476969,
+        1648.6187026762052,
+        2153.4453606898005,
+        2724.7581755177534
+      ],
+      "Initial status (h)": 2,
+      "Initial power (MW)": 119.727,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g16": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        44.2216,
+        63.901700000000005,
+        83.5818,
+        103.2619,
+        122.942
+      ],
+      "Production cost curve ($)": [
+        479.87710273171325,
+        721.9361101916934,
+        1021.0074623862845,
+        1377.0911593154867,
+        1790.1872009793003
+      ],
+      "Initial status (h)": 1,
+      "Initial power (MW)": 92.0414,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1
+    },
+    "g17": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        78.7436,
+        132.10645,
+        185.4693,
+        238.83215,
+        292.195
+      ],
+      "Production cost curve ($)": [
+        1011.8006494651871,
+        1476.3165576752338,
+        1985.8665916828656,
+        2540.4507514880825,
+        3140.069037090885
+      ],
+      "Initial status (h)": -6,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g18": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        75.7781,
+        132.302325,
+        188.82655,
+        245.350775,
+        301.875
+      ],
+      "Production cost curve ($)": [
+        962.1532258348952,
+        1371.9117498966082,
+        1785.1270528978866,
+        2201.799134838731,
+        2621.9279957191407
+      ],
+      "Initial status (h)": -4,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g19": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        78.3242,
+        139.58565,
+        200.8471,
+        262.10855,
+        323.37
+      ],
+      "Production cost curve ($)": [
+        1255.8458986616843,
+        2100.279729006901,
+        3127.2705494908146,
+        4336.818360113423,
+        5728.9231608747305
+      ],
+      "Initial status (h)": 4,
+      "Initial power (MW)": 273.215,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g20": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        36.9454,
+        55.68155,
+        74.4177,
+        93.15385,
+        111.89
+      ],
+      "Production cost curve ($)": [
+        427.1463976653873,
+        642.0251541363526,
+        906.1294511693965,
+        1219.459288764519,
+        1582.01466692172
+      ],
+      "Initial status (h)": 2,
+      "Initial power (MW)": 98.8004,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1
+    },
+    "g21": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        83.0329,
+        141.738675,
+        200.44445,
+        259.150225,
+        317.856
+      ],
+      "Production cost curve ($)": [
+        1184.9945603914075,
+        1666.660561203661,
+        2174.5190968101,
+        2708.5701672107243,
+        3268.8137724055346
+      ],
+      "Initial status (h)": -3,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g22": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        40.8695,
+        62.759625,
+        84.64975000000001,
+        106.53987500000001,
+        128.43
+      ],
+      "Production cost curve ($)": [
+        435.6633697928497,
+        701.7292873666709,
+        1042.9635032344747,
+        1459.3660173962614,
+        1950.9368298520303
+      ],
+      "Initial status (h)": -2,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1
+    },
+    "g23": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        67.4053,
+        93.251725,
+        119.09815,
+        144.94457500000001,
+        170.791
+      ],
+      "Production cost curve ($)": [
+        920.070205180751,
+        1283.5878456565902,
+        1706.9420224256266,
+        2190.13273548786,
+        2733.1599848432893
+      ],
+      "Initial status (h)": -2,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g24": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        94.3446,
+        143.0622,
+        191.7798,
+        240.4974,
+        289.215
+      ],
+      "Production cost curve ($)": [
+        1356.8822747697245,
+        1909.7727444608954,
+        2546.1595862126237,
+        3266.0428000249085,
+        4069.42238589775
+      ],
+      "Initial status (h)": 2,
+      "Initial power (MW)": 173.303,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g25": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        72.3127,
+        130.836025,
+        189.35935,
+        247.882675,
+        306.406
+      ],
+      "Production cost curve ($)": [
+        1099.8109236628238,
+        1758.814213064139,
+        2531.493944354238,
+        3417.850117533121,
+        4417.882732600788
+      ],
+      "Initial status (h)": 1,
+      "Initial power (MW)": 91.8508,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g26": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        96.4266,
+        143.2302,
+        190.0338,
+        236.8374,
+        283.641
+      ],
+      "Production cost curve ($)": [
+        1248.2778090163129,
+        1674.946783430444,
+        2135.2967112230845,
+        2629.3275923942347,
+        3157.039426943895
+      ],
+      "Initial status (h)": 4,
+      "Initial power (MW)": 209.638,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g27": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        60.2951,
+        88.20157499999999,
+        116.10804999999999,
+        144.014525,
+        171.921
+      ],
+      "Production cost curve ($)": [
+        845.4128271601319,
+        1208.2972488583985,
+        1636.0888357289894,
+        2128.7875877719052,
+        2686.3935049871443
+      ],
+      "Initial status (h)": 2,
+      "Initial power (MW)": 105.41,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g28": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        41.6794,
+        60.7598,
+        79.84020000000001,
+        98.92060000000001,
+        118.001
+      ],
+      "Production cost curve ($)": [
+        467.04463775408703,
+        711.4698711303013,
+        1012.4053385160933,
+        1369.8510399114632,
+        1783.806975316411
+      ],
+      "Initial status (h)": -4,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1
+    },
+    "g29": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        80.95,
+        116.507,
+        152.064,
+        187.621,
+        223.178
+      ],
+      "Production cost curve ($)": [
+        1274.2130962967499,
+        1652.4447294890883,
+        2058.356193752883,
+        2491.947489088135,
+        2953.218615494843
+      ],
+      "Initial status (h)": -6,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g30": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        63.618,
+        86.4885,
+        109.359,
+        132.2295,
+        155.1
+      ],
+      "Production cost curve ($)": [
+        974.3123215860653,
+        1319.2010810450267,
+        1719.5470434208362,
+        2175.350208713494,
+        2686.610576923
+      ],
+      "Initial status (h)": -3,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g31": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        99.4507,
+        156.858025,
+        214.26534999999998,
+        271.672675,
+        329.08
+      ],
+      "Production cost curve ($)": [
+        1411.613470103473,
+        2078.191712125752,
+        2858.435890504706,
+        3752.346005240336,
+        4759.92205633264
+      ],
+      "Initial status (h)": 4,
+      "Initial power (MW)": 274.86,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g32": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        71.5326,
+        117.05045000000001,
+        162.56830000000002,
+        208.08615,
+        253.604
+      ],
+      "Production cost curve ($)": [
+        1044.087116364246,
+        1422.8961677267935,
+        1813.1522851959871,
+        2214.8554687718265,
+        2628.0057184543116
+      ],
+      "Initial status (h)": 6,
+      "Initial power (MW)": 224.301,
+      "Minimum uptime (h)": 6,
+      "Minimum downtime (h)": 6
+    },
+    "g33": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        52.884,
+        81.60849999999999,
+        110.333,
+        139.0575,
+        167.782
+      ],
+      "Production cost curve ($)": [
+        752.6404794613248,
+        1119.2540992797776,
+        1556.1012874025514,
+        2063.1820438296454,
+        2640.4963685610596
+      ],
+      "Initial status (h)": -3,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 2,
+      "Minimum downtime (h)": 3
+    },
+    "g34": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        40.3873,
+        56.019725,
+        71.65215,
+        87.28457499999999,
+        102.917
+      ],
+      "Production cost curve ($)": [
+        437.9036510353721,
+        635.9926607227395,
+        877.4140839648308,
+        1162.1679207616455,
+        1490.2541711131846
+      ],
+      "Initial status (h)": -4,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1
+    },
+    "g35": {
+      "Bus": "b1",
+      "Production cost curve (MW)": [
+        31.2391,
+        52.418075,
+        73.59705,
+        94.776025,
+        115.955
+      ],
+      "Production cost curve ($)": [
+        354.9582080211317,
+        594.6432962735546,
+        903.6079410310498,
+        1281.8521422936174,
+        1729.3759000612572
+      ],
+      "Initial status (h)": -2,
+      "Initial power (MW)": 0.0,
+      "Minimum uptime (h)": 1,
+      "Minimum downtime (h)": 1
+    }
+  },
+  "Buses": {
+    "b1": {
+      "Load (MW)": [
+        1184.04,
+        864.935,
+        874.172,
+        898.441,
+        1157.15,
+        1865.41,
+        2601.81,
+        2889.39,
+        3534.92,
+        3675.15,
+        4031.31,
+        4055.3,
+        3934.64,
+        2281.86,
+        2971.07,
+        3587.11,
+        4154.25,
+        3892.68,
+        3605.58,
+        4191.43,
+        3504.98,
+        2159.18,
+        1442.44,
+        805.77,
+        534.367,
+        611.575,
+        716.653,
+        859.931,
+        1305.15,
+        1845.95,
+        2431.18,
+        3095.29,
+        3621.82,
+        3669.42,
+        4052.86,
+        4186.9,
+        4077.53,
+        2311.03,
+        2761.28,
+        3659.23,
+        4126.21,
+        4171.96,
+        3456.17,
+        4080.51,
+        3625.0,
+        2194.73,
+        1481.41,
+        836.53,
+        552.374,
+        612.785,
+        710.792,
+        890.318,
+        1320.28,
+        1852.99,
+        2560.1,
+        3053.69,
+        3659.11,
+        3671.8,
+        3881.49,
+        4119.79,
+        3723.58,
+        2190.5,
+        2927.73,
+        3541.87,
+        4204.45,
+        3926.81,
+        3624.6,
+        4195.49,
+        3556.72,
+        2284.83,
+        1374.17,
+        825.472,
+        537.737,
+        631.847,
+        689.964,
+        942.813,
+        1268.72,
+        1731.84,
+        2394.38,
+        2999.26,
+        3770.88,
+        3746.8,
+        4096.7,
+        4318.74,
+        3750.85,
+        2273.85,
+        2911.44,
+        3442.06,
+        4068.06,
+        3940.02,
+        3592.32,
+        3914.07,
+        3705.28,
+        2216.82,
+        1327.29,
+        801.867,
+        553.622,
+        593.212,
+        725.364,
+        891.928,
+        1277.37,
+        1865.75,
+        2323.48,
+        3097.68,
+        3728.05,
+        3682.99,
+        4048.52,
+        4058.38,
+        3882.09,
+        2191.43,
+        2887.45,
+        3478.43,
+        4049.06,
+        4222.79,
+        3775.38,
+        4209.05,
+        3251.5,
+        2407.6,
+        1435.17,
+        861.341,
+        553.088,
+        612.41,
+        711.652,
+        919.687,
+        1197.32,
+        1898.47,
+        2564.06,
+        3083.74,
+        3831.56,
+        3521.66,
+        3920.41,
+        4389.63,
+        3750.42,
+        2277.3,
+        2747.21,
+        3599.36,
+        4164.78,
+        3827.21,
+        3689.88,
+        4306.16,
+        3320.2,
+        2377.43,
+        1427.18,
+        785.556,
+        544.237,
+        602.215,
+        684.108,
+        974.998,
+        1204.0,
+        1865.67,
+        2569.86,
+        3042.7,
+        3708.12,
+        4043.77,
+        3819.32,
+        4308.85,
+        3774.46,
+        2136.3,
+        3078.55,
+        3843.5,
+        3929.53,
+        4083.47,
+        3572.31,
+        4032.66,
+        3410.09,
+        2267.39,
+        1363.42,
+        810.265
+      ]
+    }
+  },
+  "Reserves": {
+    "Spinning (MW)": [
+      106.89,
+      78.23,
+      74.18,
+      78.08,
+      104.02,
+      155.66,
+      209.15,
+      220.69,
+      332.83,
+      367.49,
+      405.77,
+      333.0,
+      387.62,
+      247.91,
+      297.89,
+      303.0,
+      433.75,
+      399.18,
+      296.66,
+      425.89,
+      351.36,
+      135.67,
+      128.95,
+      58.22,
+      48.24,
+      55.31,
+      60.81,
+      74.73,
+      117.32,
+      154.04,
+      195.43,
+      236.41,
+      341.02,
+      366.92,
+      407.94,
+      343.81,
+      401.7,
+      251.07,
+      276.85,
+      309.09,
+      430.83,
+      427.82,
+      284.36,
+      414.62,
+      363.39,
+      137.9,
+      132.44,
+      60.44,
+      49.87,
+      55.42,
+      60.31,
+      77.37,
+      118.68,
+      154.62,
+      205.79,
+      233.23,
+      344.53,
+      367.16,
+      390.69,
+      338.3,
+      366.83,
+      237.98,
+      293.54,
+      299.18,
+      439.0,
+      402.68,
+      298.22,
+      426.3,
+      356.55,
+      143.56,
+      122.85,
+      59.65,
+      48.55,
+      57.15,
+      58.55,
+      81.94,
+      114.05,
+      144.51,
+      192.47,
+      229.08,
+      355.05,
+      374.66,
+      412.35,
+      354.63,
+      369.51,
+      247.04,
+      291.91,
+      290.75,
+      424.75,
+      404.04,
+      295.57,
+      397.71,
+      371.44,
+      139.29,
+      118.66,
+      57.94,
+      49.98,
+      53.65,
+      61.55,
+      77.51,
+      114.83,
+      155.69,
+      186.77,
+      236.59,
+      351.02,
+      368.28,
+      407.5,
+      333.25,
+      382.44,
+      238.08,
+      289.5,
+      293.82,
+      422.77,
+      433.03,
+      310.63,
+      427.68,
+      325.95,
+      151.27,
+      128.3,
+      62.24,
+      49.93,
+      55.39,
+      60.39,
+      79.93,
+      107.63,
+      158.42,
+      206.11,
+      235.53,
+      360.77,
+      352.15,
+      394.6,
+      360.46,
+      369.47,
+      247.41,
+      275.44,
+      304.04,
+      434.85,
+      392.47,
+      303.59,
+      437.55,
+      332.84,
+      149.38,
+      127.59,
+      56.76,
+      49.13,
+      54.47,
+      58.05,
+      84.73,
+      108.23,
+      155.68,
+      206.58,
+      232.39,
+      349.14,
+      404.35,
+      384.43,
+      353.82,
+      371.84,
+      232.09,
+      308.66,
+      324.66,
+      410.29,
+      418.75,
+      293.92,
+      409.76,
+      341.85,
+      142.46,
+      121.89,
+      58.55
+    ]
+  }
+}
